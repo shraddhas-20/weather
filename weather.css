@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+align-items: center;
+}
+body{
+    background: rgb(0, 1, 3);
+    display: flex;
+    justify-content: center;
+    min-height: 40vh;
+    position: relative;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/lucknow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.7;
+}
+.card{
+    width:90%;
+    max-width: 470px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    align-items: center;
+}
+.searchbar{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 15px 25px;
+    height: 40px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 22px;
+    font-size: 18px;
+    width: 100%;
+}
+.searchbar button{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.9s ease;
+    
+}
+.searchbar button img{
+    width: 35px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+}
+.searchbar button:hover{
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+.searchbar button:hover img{
+    filter: brightness(0) invert(1);
+}
+.temp{
+    font-family: 'palatino','Arial Narrow', Arial, sans-serif ;
+    color: aliceblue;
+    font-size: 40px;
+text-shadow: 0px 0px 10px rgba(253, 251, 251, 0.5);}
+.city{
+    font-family: 'palatino', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+    font-size: 30px;
+    text-shadow: 0px 0px 10px rgba(253, 251, 251, 0.5);
+}
+.feel{
+    font-family: 'palatino', 'Arial Narrow', Arial, sans-serif;
+    color: lightblue;
+    font-size: 20px;
+    margin-top: 5px;
+text-shadow: 0px 0px 10px rgba(253, 251, 251, 0.5);}
+.weather-icon{
+    width:170px;
+    margin-top:30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight:500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.column{
+
+text-shadow: 0px 0px 10px rgba(253, 251, 251, 0.8); 
+color: white ;
+ display: flex;
+    align-items: center;
+    text-align: center;
+}
+.column img{
+    width: 40px;
+    margin-right: 10px;
+
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: 50px;
+}
+.humidity , .wind{
+    font-size: 28px;
+    
+}
+.weather{
+  display: none;
+}
+.error{
+    color: rgb(239, 92, 92);
+    text-align: left;
+    margin-left: 10px;
+    display: none;
+}
+.pressure{
+    font-size: 20px;
+    color:antiquewhite;
+    font-family:'palatino', 'Arial Narrow', Arial, sans-serif ;
+    margin-top: 10px;
+text-shadow: 0px 0px 10px rgba(253, 251, 251, 0.5);}
